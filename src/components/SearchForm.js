@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function SearchForm(props) {
   const { search, setSearch } = props
+  const handleChange = e => {
+      setSearch({ ...search, [e.target.id]: e.target.value});
+  }
   return (
           <section className="search-form">
             <form onSubmit={e => e.preventDefault()}>

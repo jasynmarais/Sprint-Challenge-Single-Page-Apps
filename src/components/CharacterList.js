@@ -48,7 +48,7 @@ export default function CharacterList(props) {
       <SearchForm
 				search={search}
 				setSearch={setSearch}
-			/>
+		/>
       <h2>Character List</h2>
       {
         charList.map(char => <CharacterCard key={char.id} data={char} />)
