@@ -27,6 +27,8 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
+Client-side routing allows the application to be navigated without making further requests to the server for assets. This takes the load off the server and lets the browser handle the heavy lifting. Less data is processed, thus routing between views is easier. This allows for more interactivity by responding to user input faster. It is also easier to debug.
+
 > Answer:
 
 ## Project Set Up

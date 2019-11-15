@@ -7,7 +7,7 @@ export default function WelcomePage() {
       <header>
         <h1>Welcome to the ultimate fan site!</h1>
         <Link to="/characters">
-          <h3>Search Characters</h3>
+          View and Search Character List <br/>
         <img
           className="main-img"
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
