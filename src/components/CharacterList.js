@@ -4,7 +4,7 @@ import axios from 'axios';
 import CharacterCard from './CharacterCard';
 import SearchForm from './SearchForm';
 
-export default function CharacterList(props) {
+function CharacterList(props) {
   // TODO: Add useState to track data from useEffect
   const [characters, setCharacters] = useState([]);
   const [search, setSearch] = useState('');
@@ -56,3 +56,5 @@ export default function CharacterList(props) {
     </section>
   );
 }
+
+export default CharacterList;
