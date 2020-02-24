@@ -1,4 +1,22 @@
 import React from "react";
+import styled from 'styled-components';
+
+const StyledForm = styled.div`
+	form {
+		width: 100%;
+		display: flex;
+	}
+	.col {
+		padding-right: 15px;
+	}
+	label {
+		display: block;
+	}
+	input {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+`;
 
 export default function SearchForm(props) {
   const { search, setSearch } = props
@@ -7,6 +25,7 @@ export default function SearchForm(props) {
   }
   return (
           <section className="search-form">
+            <StyledForm>
             <form onSubmit={e => e.preventDefault()}>
               <label htmlFor="search">Search: </label>
               <input
@@ -18,6 +37,7 @@ export default function SearchForm(props) {
                 placeholder="Search Character"
               />
             </form>
+            </StyledForm>
           </section>
   );
 }
