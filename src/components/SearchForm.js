@@ -11,6 +11,7 @@ const StyledForm = styled.div`
 	}
 	label {
 		display: block;
+    font-weight: bold;
 	}
 	input {
 		width: 100%;
