@@ -1,8 +1,20 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
+import styled from 'styled-components';
 
 import CharacterCard from './CharacterCard';
 import SearchForm from './SearchForm';
+
+const StyledCharacters = styled.div`
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+`;
+
+const Styledh2 = styled.div`
+	text-align: center;
+	text-decoration: underline;
+`;
 
 function CharacterList(props) {
   // TODO: Add useState to track data from useEffect
@@ -49,10 +61,14 @@ function CharacterList(props) {
 				search={search}
 				setSearch={setSearch}
 		/>
+		<Styledh2>
       <h2>Character List</h2>
+	  </Styledh2>
+	  <StyledCharacters>
       {
         charList.map(char => <CharacterCard key={char.id} data={char} />)
       }
+	  </StyledCharacters>
     </section>
   );
 }
